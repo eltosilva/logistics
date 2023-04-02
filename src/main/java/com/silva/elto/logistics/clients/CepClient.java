@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient(value = "viacep", url = "https://viacep.com.br/ws")
+@FeignClient(value = "viacep", url = "${url}")
 public interface CepClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/{codigo}/json", produces = "application/json")
