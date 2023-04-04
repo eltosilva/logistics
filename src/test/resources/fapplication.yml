@@ -1,9 +1,6 @@
 url: 'https://viacep.com.br/'
 
 spring:
-  mvc:
-    servlet:
-      path: /v1
   datasource:
     url: jdbc:h2:mem:dbFrete
     driverClassName: org.h2.Driver

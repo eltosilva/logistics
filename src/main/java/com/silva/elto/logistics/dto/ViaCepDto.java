@@ -1,10 +1,14 @@
 package com.silva.elto.logistics.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class ViaCepDto {
     private String cep;
     private String logradouro;
@@ -16,6 +20,7 @@ public class ViaCepDto {
     private String gia;
     private String ddd;
     private String siafi;
+    private boolean erro;
 }
 
 /*
